@@ -1,313 +1,592 @@
-<!-- Abaixo temos a estrutura do HTML5, criada de forma automática pelo VS Code -->
 <!DOCTYPE html>
-<!-- Colocar pt-BR para colocar o idioma Portugês Brasileiro -->
-<html lang="pt-BR">
+<html lang="pt-br">
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>LabSyncro - Results Count</title>
-    <!-- Aqui, é linkado o arquivo .html com o .css -->
-    <link href="./style.css" rel="stylesheet" />
-
-    <!-- Abaixo, habilitamos o uso da fonte Dongle do Google Fonts -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Dongle:wght@300;400;700&display=swap" rel="stylesheet">
-
-    <!-- Abaixo, habilitamos o uso da fonte DM Sans do Google Fonts -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap" rel="stylesheet">
-
-    <!-- Implementando Font Awesome no meu site -->
-    <script src="https://kit.fontawesome.com/912b04d4dd.js" crossorigin="anonymous"></script>
-
-    <link rel="icon" type="image/x-icon" href="./img/logo-little-help-favicon.svg">
-
-    <script>
-        function msg() {
-            alert("Você será redirecionado para o seu servidor de e-mail," +
-                " caso não esteja logado no seu e-mail, efetue o login e tente novamente."
-            )
-        }
-
-        function click_menu() {
-            if (itens.style.display == 'block') {
-                itens.style.display = 'none'
-            }
-
-            else {
-                itens.style.display = 'block'
-            }
-        }
-    </script>
-
+    <title>
+        Inovação e Tecnologia - LabSyncro
+    </title>
+    <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
-    <div class="alinhar-centro">
-        <header>
-            <nav>
-                <a href="#topo"><img class="logo" src="./img/logo-little-help.svg"></a>
-                <ul class="menu" id="itens">
-                    <li><a href="#topo">sobre</a>
-                    <li><a href="#a-lh">produtos</a></li>
-                    <li><a href="#servicos">serviços</a></li>
-                    <li><a href="#contato">contato</a></li>
+    <header>
+        <div class="logo centralizar">
+            <a href="#topo">
+                <img src="../logo0.svg" alt="Logo">
+            </a>
+        </div>
+        <div class="textos centralizar">
+            <nav class="navigation">
+                <ul class="textos-header">
+                    <li>
+                        <a href="#sobre">
+                            Sobre
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#valores">
+                            Valores
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#servicos">
+                            Serviços
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#contato">
+                            Contato
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#novidades">
+                            Novidades
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#carreira">
+                            Carreira
+                        </a>
+                    </li>
                 </ul>
-                <i id="burguer" class="fa-solid fa-bars" onclick="click_menu()"></i>
             </nav>
-        </header>
-    </div>
-    <main>
-        <section id="topo">
-            <div class="informacoes-topo">
-                <h1> Inovação e Tecnologia, na <span class="texto-bold"> LabSyncro </span></h1>
-                <i class="fa-solid fa-chevron-down"></i>
-            </div>
-            <!--<div class="video-background">
-                <video width="100%" autoplay muted>
-                    <source src="./video/inicio_4.mp4" type="video/mp4" />
-                </video>
-            </div>-->
-        </section>
-        <div class="container">
+        </div>
+    </header>
 
-            <section id="a-lh">
-                <p class="titulos">
-                    Nosso propósito
+    <!-- Primeira Seção - Topo -->
+    <section id="topo">
+        <div class="div-texto-topo">
+            <h1 class="titulos">
+                Inovação e Tecnologia de ponta com a líder global em LIMS e ELN
+            </h1>
+            <p class="texto-topo">
+                A LabSyncro é uma prestadora de serviços profissionais de implementação e validação,
+                treinamento e suporte técnico para os laboratórios ao redor do mundo, que enfrentam desafios na análise
+                e na realização a partir das coletas de dados.
+            </p>
+        </div>
+        <div class="div-imagens-topo">
+            <img src="../img-topo0.png" alt="Imagem LabSyncro" class="img-topo">
+            <img src="../atomo-fundo-topo0.svg" alt="Atomo" class="atomo-topo">
+        </div>
+    </section>
+
+    <!-- Segunda Seção - Valores -->
+    <section>
+        <div id="valores">
+            <div class="titulos-centralizados">
+                <h1>
+                    Valores
+                </h1>
+            </div>
+            <div class="div-imagens-valores">
+                <img src="../img-valores0.png" alt="Imagem Valores" class="img-valores">
+                <img src="../atomo-fundo-valores0.svg" alt="Atomo" class="atomo-valores">
+            </div>
+            <div class="div-texto-valores">
+                <p class="texto-valores">
+                    Na LabSyncro, nossos valores são a base de
+                    cada decisão e ação que refletem o nosso
+                    propósito como uma empresa de tecnologia
+                    inovadora e responsável. <br>
+                    <br>
+                    O valor de ética e integridade, nos faz agir
+                    com retidão e respeito aos nossos princípios
+                    em todas as relações. O nosso compromisso é
+                    fazer o certo, mesmo diante aos desafios. <br>
+                    <br>
+                    A Inovação e o conhecimento são alcançados
+                    mediante o aprendizado contínuo e transforma
+                    ideias em soluções tecnológicas que fazem
+                    a diferença. <br>
+                    <br>
+                    O nosso compromisso com a excelência nos
+                    faz entregar resultados de alta qualidade,
+                    buscando constantemente superar expectativas
+                    e estabelecer padrões elevados em tudo o que
+                    fazemos.
                 </p>
-
-                <div>
-                    <!-- Primeiro banner, com uma classe que define a sua largura com 100% -->
-                    <img class="a-lh-banner-01" src="./img/banner-01.png" />
-                </div>
-
-                <div>
-                    <!-- Primeiro banner, na sua versão mobile, com uma classe que define a sua largura com 100% -->
-                    <img class="a-lh-banner-02" src="./img/banner-01-mobile.png" />
-                </div>
-
-                <div class="a-lh-flex">
-                    <!-- Parte com os números da empresa e frase do Jucelino, separados por duas Divs -->
-
-                    <div>
-                        <!-- <div><i class="fa-solid fa-quote-left"></i></div> -->
-                        <div><i class="fa-solid fa-circle-notch"></i></div>
-                        <div>
-                            <p class="a-lh-jucelino">nossos valores são a base de
-                                cada decisão e ação
-                                </span></p>
-                        </div>
-                        <!-- <div><img class="juca" src="./img/assinatura-jucelino.png"></div> -->
-                    </div>
-
-                    <div class="numeros-flex">
-                        <div>
-                            <div class="degrade-01 a-lh-numeros"><!-- 7 --> <img class="icones-sobre" src="./img/grafico.svg"></div>
-                            <p class="a-lh-jucelino">Inovação</p>
-                        </div>
-                        <div>
-                            <div class="degrade-01 a-lh-numeros"><!-- 85 --> <img class="icones-sobre" src="./img/icone-erlen.svg"></div>
-                            <p class="a-lh-jucelino">Integridade</p>
-                        </div>
-                        <div>
-                            <div class="degrade-01 a-lh-numeros"><!-- 3 --> <img class="icones-sobre" src="./img/icone-tubo-ensaio.svg"></div>
-                            <p class="a-lh-jucelino">Compromisso</p>
-                        </div>
-                    </div>
-
-                </div>
-
-            </section>
-
-            <section id="servicos"></section>
-
-            <!-- Primeira fileira de cards começa AQUI -->
-            <div>
-                <h2 class="titulos"> Nossos produtos </span></h2>
-
-                <div class="fileira-cards">
-
-                    <div class="servicos-card">
-                        <!-- CARD DE BRANDING -->
-                        <img class="icone" src="./img/mobile-screen-button-solid.svg">
-                        <h3>Mobile</h3>
-                        <p>Acesso aos dados através do celular</p>
-                        <button><a target="_blank"
-                                href="https://api.whatsapp.com/send?phone=5511912345678&text=Ol%C3%A1,%20preciso%20de%20uma%20ajudinha."><i class="fa-solid fa-arrow-right-from-bracket"></i> &nbsp; entre em contato</a></button>
-                    </div>
-
-                    <!-- FRASE 1 -->
-                    <!-- <div>
-                        <p class="subtitulos"><span class="degrade-01"> criamos a
-                                sua marca</span> e comunicamos ela nas <span class="degrade-01"> mídias sociais</span>
-                        </p>
-                    </div> -->
-
-                    <div class="servicos-card">
-                        <!-- CARD DE SOCIAL MEDIA -->
-                        <img class="icone" src="./img/icone-grafico.svg">
-                        <h3>LIMS</h3>
-                        <p>Laboratory Information Management System</p>
-                        <button><a target="_blank"
-                                href="https://api.whatsapp.com/send?phone=5511912345678&text=Ol%C3%A1,%20preciso%20de%20uma%20ajudinha."><i class="fa-solid fa-arrow-right-from-bracket"></i> &nbsp; entre em contato</a></button>
-                    </div>
-
-                    <div class="servicos-card">
-                        <!-- CARD DE SOCIAL MEDIA -->
-                        <img class="icone" src="./img/icone-microbiologia.svg">
-                        <h3>ELN</h3>
-                        <p>Electronic Laboratory Notebook</p>
-                        <button><a target="_blank"
-                                href="https://api.whatsapp.com/send?phone=5511912345678&text=Ol%C3%A1,%20preciso%20de%20uma%20ajudinha."><i class="fa-solid fa-arrow-right-from-bracket"></i> &nbsp; entre em contato</a></button>
-                    </div>
-
-                </div>
-
             </div>
-            <!-- Primeira fileira de cards termina AQUI -->
+        </div>
+    </section>
 
-            <!-- Segunda fileira de cards começa AQUI -->
-            <div>
+    <div class="divisor-01">
+        <img src="../divisao-010.svg" alt="Divisão Entre Div" class="divisor-de-div">
+    </div>
 
-                <div class="fileira-cards">
-
-                    <!-- FRASE 2 -->
-                    <!-- <div>
-                        <p class="subtitulos"><span class="degrade-01"> fotos e vídeos</span> que <span
-                                class="degrade-01"> emocionam e conectam</span>
-                        </p>
-                    </div> -->
-
-                    <div class="servicos-card">
-                        <!-- CARD DE AUDIOVISUAL -->
-                        <img class="icone" src="./img/network-wired-solid.svg">
-                        <h3>Implementação</h3>
-                        <!-- <p>A arte de produzir conteúdos audiovisuais cativantes, autênticas e inesquecíveis</p> -->
-                        <button><a target="_blank"
-                                href="https://api.whatsapp.com/send?phone=5511912345678&text=Ol%C3%A1,%20preciso%20de%20uma%20ajudinha."><i class="fa-solid fa-arrow-right-from-bracket"></i> &nbsp; entre em contato</a></button>
-                    </div>
-
-
-                    <div class="servicos-card">
-                        <!-- CARD DE AUDIOVISUAL -->
-                        <img class="icone" src="./img/headset-solid.svg">
-                        <h3>Suporte Técnico</h3>
-                        <!-- <p>A arte de produzir conteúdos audiovisuais cativantes, autênticas e inesquecíveis</p> -->
-                        <button><a target="_blank"
-                                href="https://api.whatsapp.com/send?phone=5511912345678&text=Ol%C3%A1,%20preciso%20de%20uma%20ajudinha."><i class="fa-solid fa-arrow-right-from-bracket"></i> &nbsp; entre em contato</a></button>
-                    </div>
-
-                    <div class="servicos-card">
-                        <!-- CARD DE AUDIOVISUAL -->
-                        <img class="icone" src="./img/vial-circle-check-solid.svg">
-                        <h3>Teste & Validação</h3>
-                        <!-- <p>A arte de produzir conteúdos audiovisuais cativantes, autênticas e inesquecíveis</p> -->
-                        <button><a target="_blank"
-                                href="https://api.whatsapp.com/send?phone=5511912345678&text=Ol%C3%A1,%20preciso%20de%20uma%20ajudinha."><i class="fa-solid fa-arrow-right-from-bracket"></i> &nbsp; entre em contato</a></button>
-                    </div>
-
-                    <!-- FRASE 3 -->
-                    <!-- <div>
-                        <p class="subtitulos"><span class="degrade-01"> animações</span> para dar <span
-                                class="degrade-01"> movimento à sua marca</span>
-                        </p>
-                    </div> -->
-
-                </div>
-
+    <!-- Terceira Seção - Produtos -->
+    <section id="produtos">
+        <!-- Linha 1: Texto + Imagens -->
+        <div class="produtos-conteudo">
+            <div class="div-texto-produtos">
+                <h1 class="titulos">
+                    Produtos
+                </h1>
+                <p class="texto-produtos">
+                    A LabSyncro é líder em automação
+                    de laboratórios e continua superando
+                    as expectativas de seus clientes.
+                    Principalmente quando se trata de
+                    produtos LIMS (Sistema de gerenciamento de informações de laboratório) e ELN (Caderno eletrônico de
+                    laboratório) em uma solução integrada e pronta para empresas.
+                </p>
             </div>
-            <!-- Segunda fileira de cards termina AQUI -->
-
-            
-            <!-- Terceira fileira de cards começa AQUI -->
-
-        <!-- -->
-            <!-- <div class="fileira-cards">
-
-                <div class="servicos-card">
-                     -- CARD DE CRIAÇÃO DE SITES --
-                    <img class="icone" src="./img/criacao-de-sites.svg">
-                    <h3>criação de sites</h3>
-                    <p>A arte de desenvolver sites funcionais, inovadores e visualmente impactantes.</p>
-                    <button><a target="_blank"
-                            href="https://api.whatsapp.com/send?phone=5511912345678&text=Ol%C3%A1,%20preciso%20de%20uma%20ajudinha."><i
-                                class="fa-brands fa-whatsapp"></i> &nbsp; quero uma
-                            ajudinha</a></button>
-                </div>
-
-                -- FRASE 4 --
-                <div>
-                    <p class="subtitulos"> criamos <span class="degrade-01">tudo o que você precisa</span>
+            <div class="div-imagens-produtos">
+                <img src="../img-produtos0.png" alt="Imagem LabSyncro" class="img-produtos">
+                <img src="../atomo-fundo-produtos0.svg" alt="Atomo" class="atomo-produtos">
+            </div>
+        </div>
+        <!-- Linha 2: 3 Cards -->
+        <div class="produtos-cards">
+            <!-- Card -->
+            <div class="card">
+                <!-- Imagem de fundo -->
+                <img src="../Img-Card-LBS.png" alt="Fundo Card" class="card-img img1">
+                <img src="../fundo-degrade-produtos.png" alt="Fundo Card" class="card-img-fundo">
+                <div class="card-textos">
+                    <h2 class="card-titulo">
+                        LabSyncro Mobile
+                    </h2>
+                    <p class="card-descricao">
+                        Conecte-se facilmente
+                        aos sistemas LabSyncro,
+                        veja seus dados e realize
+                        tarefas definidas pelos
+                        seus clientes.
                     </p>
+                    <button class="card-btn">
+                        <a href="#">
+                            Fale Conosco
+                        </a>
+                    </button>
                 </div>
-
-                <div class="servicos-card">
-                    -- CARD DE GAMIFICAÇÃO --
-                    <img class="icone" src="./img/gamificacao.svg">
-                    <h3>gamificação</h3>
-                    <p>A arte de criar experiências imersivas, envolventes e altamente motivadoras</p>
-                    <button><a target="_blank"
-                            href="https://api.whatsapp.com/send?phone=5511912345678&text=Ol%C3%A1,%20preciso%20de%20uma%20ajudinha."><i
-                                class="fa-brands fa-whatsapp"></i> &nbsp; quero uma
-                            ajudinha</a></button>
+                <div class="card-texto-visivel">
+                    Acesso aos dados através do celular
                 </div>
+            </div>
+            <div class="card">
+                <!-- Imagem de fundo -->
+                <img src="../Img-Card-LIMS.png" alt="Fundo Card" class="card-img img2">
+                <img src="../fundo-degrade-produtos.png" alt="Fundo Card" class="card-img-fundo">
+                <div class="card-textos">
+                    <h2 class="card-titulo">
+                        LIMS
+                    </h2>
+                    <p class="card-descricao">
+                        Automatize e gerencie seus dados com segurança e eficiência. O LIMS da LabSyncro tem a solução
+                        completa.
+                    </p>
+                    <button class="card-btn">
+                        <a href="#">
+                            Fale Conosco
+                        </a>
+                    </button>
+                </div>
+                <div class="card-texto-visivel">
+                    Laboratory Information Management System
+                </div>
+            </div>
+            <div class="card">
+                <!-- Imagem de fundo -->
+                <img src="../Img-Card-ELN.png" alt="Fundo Card" class="card-img img3">
+                <img src="../fundo-degrade-produtos.png" alt="Fundo Card" class="card-img-fundo">
+                <div class="card-textos">
+                    <h2 class="card-titulo">
+                        ELN
+                    </h2>
+                    <p class="card-descricao">
+                        Torne o gerenciamento de laboratório e o controle
+                        de qualidade eficazes com a ferramenta ELN.
+                    </p>
+                    <button class="card-btn">
+                        <a href="#">
+                            Fale Conosco
+                        </a>
+                    </button>
+                </div>
+                <div class="card-texto-visivel">
+                    Electronic Laboratory Notebook
+                </div>
+            </div>
+            <img src="../atomo-fundo-produtos0.svg" alt="Atomo" class="atomo-produtos">
+        </div>
+    </section>
 
-            </div> -->
-            <!-- Terceira fileira de cards termina AQUI -->
-            <!-- Secao video -->
-            <section id="video">
-                <h2 class="titulos"> Nos conheça melhor </span></h2>
-                <div class="video-institucional">
-                <video class="video-sozinho" controls>
-                    <source src="./video/Reels_Antes_e Depois.mp4" type="video/mp4" />
-                </video>
+    <div class="divisor-02">
+        <img src="../divisao-020.svg" alt="Divisão Entre Div" class="divisor-de-div">
+    </div>
+
+    <!-- Quarta Seção - Serviços -->
+    <section id="servicos">
+        <!-- Linha 1: Texto + Imagens -->
+        <div class="servicos-conteudo">
+            <div class="div-texto-servicos">
+                <h1 class="titulos">
+                    Serviços
+                </h1>
+                <p class="texto-servicos">
+                    A LabSyncro oferece serviços
+                    que comprovam a competência
+                    e eficácia da empresa. Confira os
+                    nossos benefícios e obtenha o
+                    retorno máximo do seu investimento.
+                </p>
+            </div>
+            <div class="div-imagens-servicos">
+                <img src="../img-servicos0.png" alt="Imagem LabSyncro" class="img-servicos">
+                <img src="../atomo-fundo-servicos0.svg" alt="Atomo" class="atomo-servicos">
+            </div>
+        </div>
+        <!-- Linha 2: 3 Cards -->
+        <div class="servicos-cards">
+            <!-- Card -->
+            <div class="card">
+                <!-- Imagem de fundo -->
+                <img src="../fundo-implementacao0.png" alt="Fundo Card" class="card-img img4">
+                <img src="../fundo-degrade-servicos.png" alt="Fundo Card" class="card-img-fundo">
+                <div class="card-textos">
+                    <h2 class="titulo-card">
+                        Implementação
+                    </h2>
+                    <p class="card-descricao">
+                        Adquira conhecimento
+                        através de mentoria
+                        com os consultores da
+                        LabSyncro e assuma a
+                        propriedade do sistema
+                        com autossuficiência.
+                    </p>
+                    <button class="card-btn">
+                        <a href="#">
+                            Fale Conosco
+                        </a>
+                    </button>
+                </div>
+            </div>
+            <div class="card">
+                <!-- Imagem de fundo -->
+                <img src="../fundo-suporte-tecnico0.png" alt="Fundo Card" class="card-img img5">
+                <img src="../fundo-degrade-servicos.png" alt="Fundo Card" class="card-img-fundo">
+                <div class="card-textos">
+                    <h2 class="titulo-card">
+                        Suporte Técnico
+                    </h2>
+                    <p class="card-descricao">
+                        Garanta que seus clientes
+                        obtenham os benefícios
+                        de seu investimento na
+                        LabSyncro LIMS, desde
+                        uma pequena instalação
+                        laboratorial ou uma
+                        implantação empresarial
+                        global em vários idiomas.
+                    </p>
+                    <button class="card-btn">
+                        <a href="#">
+                            Fale Conosco
+                        </a>
+                    </button>
+                </div>
+            </div>
+            <div class="card">
+                <!-- Imagem de fundo -->
+                <img src="../fundo-teste-e-validacao0.png" alt="Fundo Card" class="card-img img6">
+                <img src="../fundo-degrade-servicos.png" alt="Fundo Card" class="card-img-fundo">
+                <div class="card-textos">
+                    <h2 class="titulo-card">
+                        Teste & Validação
+                    </h2>
+                    <p class="card-descricao">
+                        Defina, planeje e execute
+                        uma estratégia de validação
+                        e teste, oferecendo ao
+                        cliente a confiança de um
+                        sistema de alta qualidade.
+                    </p>
+                    <button class="card-btn">
+                        <a href="#">
+                            Fale Conosco
+                        </a>
+                    </button>
+                </div>
+            </div>
+            <img src="../atomo-fundo-servicos-20.svg" alt="Atomo" class="atomo-servicos-2">
+        </div>
+    </section>
+
+    <div class="divisor-01">
+        <img src="../divisao-010.svg" alt="Divisão Entre Div" class="divisor-de-div">
+    </div>
+
+    <!-- Quinta Seção - Novidades-->
+    <section id="novidades">
+        <div class="novidades-conteudo">
+            <div class="div-texto-novidades">
+                <h1 class="titulos">
+                    Novidades
+                </h1>
+                <p class="texto-novidades">
+                    A LabSyncro tem se aprimorado
+                    para atender com excelência às
+                    demandas de um setor
+                    em constante transformação.
+                    <br><br>
+                    Recentemente, passamos por
+                    mudanças significativas que
+                    reforçam nossa identidade
+                    e consolidam o compromisso
+                    com a inovação e a liderança
+                    no mercado de gestão laboratorial.
+                </p>
+            </div>
+            <div class="div-imagens-novidades">
+                <img src="../video-maerte0.svg" alt="Imagem LabSyncro" class="img-novidades">
+                <img src="../atomo-fundo-novidades0.svg" alt="Atomo" class="atomo-novidades">
+            </div>
+        </div>
+    </section>
+
+    <!-- Sexta Seção - Visual Impactante -->
+    <section id="visual-impactante">
+        <div class="Imagens-VI">
+            <div class="Linha-IMG-VI">
+                <img src="../img-1-visual-impactante0.png" alt="Imagem 1" class="imgs-VI">
+                <img src="../img-2-visual-impactante0.png" alt="Imagem 2" class="imgs-VI">
+            </div>
+            <div class="Linha-IMG-VI">
+                <img src="../img-3-visual-impactante0.png" alt="Imagem 3" class="imgs-VI">
+                <img src="../img-4-visual-impactante0.png" alt="Imagem 4" class="imgs-VI">
+            </div>
+            <div class="Linha-IMG-VI">
+                <img src="../img-5-visual-impactante0.png" alt="Imagem 5" class="img-VI-unica">
+            </div>
+            <img src="../atomo-fundo-servicos0.svg" alt="Atomo" class="atomo-VI">
+        </div>
+    </section>
+
+    <!--DIVISAO SECTION 6-->
+    <main class="main-cards-estatico">
+        <div class="card-estatico">
+            <img src="../img-card-novidades-1.png" alt="Fundo Card" class="card-img img1-estatico">
+            <div class="card-textos-estatico">
+                <h2 class="card-titulo-estatico">
+                    Moderno
+                    <span style="
+                    color: #F2F2F2;
+                    font-family: Oswald;
+                    font-size: 36px;
+                    font-style: normal;
+                    font-weight: 400;
+                    line-height: 36px;
+                    text-transform: uppercase;">
+                        e
+                    </span>
+                    Minimalista
+                </h2>
+                <button class="card-btn-estatico">
+                    <a href="#">
+                        Sempre Atual
+                    </a>
+                </button>
+            </div>
+        </div>
+        <div class="card-estatico">
+            <img src="../img-card-novidades-2.png" alt="Fundo Card" class="card-img img2-estatico">
+            <div class="card-textos-estatico">
+                <h2 class="card-titulo-estatico">
+                    Diferença
+                    <span style="
+                    color: #F2F2F2;
+                    font-family: Oswald;
+                    font-size: 36px;
+                    font-style: normal;
+                    font-weight: 400;
+                    line-height: 36px;
+                    text-transform: uppercase;">
+                        nos
+                    </span>
+                    Detalhes
+                </h2>
+                <button class="card-btn-estatico">
+                    <a href="#sobre">
+                        Como contamos nossa história
+                    </a>
+                </button>
+            </div>
+        </div>
+        <div class="card-estatico">
+            <img src="../img-card-novidades-3.png" alt="Fundo Card" class="card-img img3-estatico">
+            <div class="card-textos-estatico">
+                <h2 class="card-titulo-estatico">
+                    <span style="
+                    color: #F2F2F2;
+                    font-family: Oswald;
+                    font-size: 36px;
+                    font-style: normal;
+                    font-weight: 400;
+                    line-height: 36px;
+                    text-transform: uppercase;">
+                        Aos
+                    </span>
+                    Moldes
+                    <br> do Tempo
+                </h2>
+                <button class="card-btn-estatico">
+                    <a href="#">
+                        Sempre Atual
+                    </a>
+                </button>
+            </div>
+        </div>
+    </main>
+
+    <div class="divisor-04">
+        <img src="../divisao-040.svg" alt="Divisão Entre Div" class="divisor-de-div">
+    </div>
+
+    <!-- Setima Seção - Carreira -->
+    <section id="carreira">
+        <div class="carreira-conteudo">
+            <div class="div-texto-carreira">
+                <h1 class="titulos">
+                    Carreira
+                </h1>
+                <p class="texto-carreira">
+                    Junte-se à equipe LabSyncro
+                    e ajude nossos clientes a atingir
+                    seus objetivos em automação
+                    laboratorial.
+                </p>
+            </div>
+            <div class="div-imagens-carreira">
+                <img src="../img-carreira0.png" alt="Imagem LabSyncro" class="img-carreira">
+                <img src="../atomo-fundo-carreira0.svg" alt="Atomo" class="atomo-carreira">
+            </div>
+        </div>
+    </section>
+
+    <!-- Oitava Seção - Oportunidades -->
+    <section id="oportunidades">
+        <div class="oportunidades-conteudo">
+            <!-- Coluna da esquerda: Título, Texto e Imagem de Fundo -->
+            <div class="div-texto-oportunidades">
+                <img src="../atomo-fundo-oportunidades0.svg" alt="Atomo" class="atomo-oportunidades">
+                <h1 class="titulos">Oportunidades</h1>
+                <p class="texto-oportunidades">
+                    Você tem espírito de equipe e lida
+                    bem com desafios? Tem interesse
+                    em fazer parte da nossa equipe?
+                    Veja as vagas em aberto!
+                </p>
             </div>
 
-
-            </section>
-            <!-- Seção contato -->
-            <section id="contato">
-
-                <h2 class="titulos"> Converse melhor conosco</span></h2>
-                <div class="contato-flex">
-
-                    <!-- Cards de Contato -->
-
-                    <div> <!-- Div Principal -->
-                        <p class="contato-texto">Tem alguma dúvida,
-                            está em busca de algum
-                            dos nossos serviços ou tem interesse em fazer parte da nossa equipe?
-                        </p>
-                            <br><br>
-                        <p class="contato-texto">Preencha o
-                            formulário a seguir.</p>
-                    </div><!-- Div Principal -->
-
-                    <!-- Formulário -->
-                    <div>
-                        <form action="mailto:contato@littlehelp.com.br" method="post" enctype="text/plain">
-                            <label for=""> nome</label><br>
-                            <input type="text" name="nome" id="nome">
-                            <label for="">email</label><br>
-                            <input type="text" name="email" id="email">
-                            <label for="">endereço</label><br>
-                            <input type="text" name="telefone" id="telefone">
-                            <label for="">mensagem</label><br>
-                            <textarea rows="10" type="text" name="mensagem" id="mensagem"></textarea>
-                            <button class="botao" type="submit" onclick="msg()">enviar</button>
-                        </form>
-                    </div>
-
+            <!-- Coluna da direita: Título "PAÍS / BRASIL" e Botões -->
+            <div class="div-botoes-oportunidades">
+                <h1 class="titulos">PAÍS / BRASIL</h1>
+                <div class="buttons-container">
+                    <button class="btn-opcao">
+                        <span class="location">São Paulo</span>
+                        <span class="vacancies">8 vagas</span>
+                    </button>
+                    <button class="btn-opcao">
+                        <span class="location">Rio de Janeiro</span>
+                        <span class="vacancies">8 vagas</span>
+                    </button>
+                    <button class="btn-opcao">
+                        <span class="location">Minas Gerais</span>
+                        <span class="vacancies">8 vagas</span>
+                    </button>
                 </div>
-            </section>
+            </div>
+        </div>
+    </section>
 
-    </main>
-    <footer>
-        <p>LabSyncro &#169; todos os direitos reservados. </p>
-    </footer>
+    <!-- Nona Seção - Contacte-nos (FALTA FINALIZAR)-->
+    <section id="contato">
+        <h2 class="titulos-cntt">Contacte-nos</h2>
+        <div class="contato-flex">
+            <!-- Texto explicativo (coluna esquerda) -->
+            <div>
+                <p class="contato-texto">
+                    Tem alguma dúvida, está em busca de algum dos nossos serviços ou tem interesse em fazer parte da
+                    nossa equipe?
+                </p>
+                <br><br>
+            </div>
+
+            <!-- Formulário (coluna direita) -->
+            <div class="div-formulario">
+                <p class="formulario-texto">
+                    Vamos conversar?
+                </p>
+                <form action="mailto:jon.el.abdalla@gmao.com.br" method="post" enctype="text/plain">
+                    <input type="text" name="nome" id="nome" placeholder="Nome*" required><br>
+
+                    <input type="text" name="sobrenome" id="sobrenome" placeholder="Sobrenome*" required><br>
+
+                    <input type="email" name="email" id="email" placeholder="E-mail*" required><br>
+
+                    <input type="tel" name="celular" id="celular" placeholder="Celular"><br>
+
+                    <textarea rows="10" name="mensagem" id="mensagem" placeholder="Mensagem*" required></textarea><br>
+
+                    <button class="botao-cntt" type="submit" onclick="msg()">Enviar</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+
+
+    <!-- ULTIMA SECAO - Footer -->
+    <section id="rodape">
+        <div class="rodape-conteudo">
+            <!-- Coluna Esquerda: Logo e Redes Sociais -->
+            <div class="div-texto-rodape">
+                <div class="logo">
+                    <img src="../logo-labsyncro-rodape0.png" alt="Logo LabSyncro">
+                </div>
+                <div class="redes-sociais">
+                    <a href="#" class="social-icon">
+                        <img src="../logo-linkeding0.svg" alt="LinkedIn">
+                    </a>
+                    <a href="#" class="social-icon">
+                        <img src="../logo-instagram0.svg" alt="Instagram">
+                    </a>
+                    <a href="#" class="social-icon">
+                        <img src="../logo-facebook0.svg" alt="Facebook">
+                    </a>
+                    <a href="#" class="social-icon">
+                        <img src="../logo-youtube0.svg" alt="YouTube">
+                    </a>
+                </div>
+            </div>
+
+            <!-- Coluna Direita: Empresas Parceiras e Direitos -->
+            <div class="div-imagens-rodape">
+                <p class="texto-parceiros">
+                    Com a <span class="negrito">confiança e admiração das empresas
+                    mais influentes e inovadoras do mercado </span> 
+                </p>
+                <div class="logos-empresas">
+                    <img src="../logo-pfizer0.svg" alt="Pfizer">
+                    <img src="../logo-roche0.svg" alt="Roche">
+                    <img src="../logo-chevron0.svg" alt="Chevron">
+                    <img src="../logo-good-year0.svg" alt="Goodyear">
+                </div>
+                <div class="linha"></div>
+            </div>
+        </div>
+        <p class="direitos">
+            LabSyncro todos os direitos reservados &copy;
+        </p>
+    </section>
+
+
+
+
 </body>
 
 </html>
