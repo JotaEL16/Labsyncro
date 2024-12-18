@@ -100,6 +100,17 @@ header {
     margin-top: 100px;
 }
 
+#valores {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.titulos-centralizados {
+    margin-bottom: 20px; /* Ajuste a distância entre o título e o conteúdo abaixo */
+    text-align: center;
+}
+
 
 /*SECTION Topo*/
 .div-texto-topo {
@@ -163,6 +174,15 @@ header {
     font-style: normal;
     font-weight: 400;
     line-height: normal;
+}
+
+.conteudo-valores {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 20px; /* Espaço entre o texto e as imagens */
+    margin-top: 20px; /* Espaço entre o título e o conteúdo */
 }
 
 .div-imagens-valores {
@@ -312,15 +332,15 @@ header {
 }
 
 .img1 {
-    background-image: url('../Img-Card-LBS.png');
+    background-image: url('./Img-Card-LBS.png');
 }
 
 .img2 {
-    background-image: url('../Img-Card-LIMS.png');
+    background-image: url('./Img-Card-LIMS.png');
 }
 
 .img3 {
-    background-image: url('../Img-Card-ELN.png');
+    background-image: url('./Img-Card-ELN.png');
 }
 
 .card-img-fundo {
@@ -333,19 +353,19 @@ header {
     left: 0;
     z-index: 0;
     transition: 0.5s all ease-in-out;
-    background-image: url('../Img-Card-LBS.png');
+    background-image: url('./Img-Card-LBS.png');
     background-size: cover;
     background-position: center;
     opacity: 0;
 }
 
 .card:hover .card-img {
-    background-image: url('../fundo-degrade-produtos.png');
+    background-image: url('./fundo-degrade-produtos.png');
     opacity: 0;
 }
 
 .card:hover .card-img-fundo {
-    background-image: url('../fundo-degrade-produtos.png');
+    background-image: url('./fundo-degrade-produtos.png');
     opacity: 1;
 }
 
@@ -552,15 +572,15 @@ header {
 }
 
 .img4 {
-    background-image: url('../fundo-implementacao0.png');
+    background-image: url('./fundo-implementacao0.png');
 }
 
 .img5 {
-    background-image: url('../fundo-suporte-tecnico0.png');
+    background-image: url('./fundo-suporte-tecnico0.png');
 }
 
 .img6 {
-    background-image: url('../fundo-teste-e-validacao0.png');
+    background-image: url('./fundo-teste-e-validacao0.png');
 }
 
 .titulo-card {
@@ -993,6 +1013,7 @@ header {
     text-align: center;
     margin-bottom: 40px;
     color: #F2F2F2;
+    font-family: Arial, Helvetica, sans-serif; 
 }
 
 .contato-flex {
@@ -1068,11 +1089,11 @@ label {
     color: #252525;
     border: none;
     cursor: pointer;
-    margin-top: 20px;
     text-transform: uppercase;
     width: auto;
     align-self: center;
-    display: flex;
+    display: block;
+    margin: 20px auto; /* Centraliza horizontalmente */
 }
 
 input::placeholder,
@@ -1155,7 +1176,7 @@ textarea::placeholder {
     align-items: flex-start;
     gap: 40px;
     padding: 20px 120px;
-    background-image: url('../rodape-fundo0.png'); /* Imagem de fundo */
+    background-image: url('./rodape-fundo0.png'); /* Imagem de fundo */
     background-size: cover;
     background-position: center;
     color: #f2f2f2;
@@ -1183,7 +1204,7 @@ textarea::placeholder {
     font-weight: 400;
 }
 
-.logo img {
+.logo-footer img {
     width: 150px;
     height: auto;
     margin-bottom: 20px;
